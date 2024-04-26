@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -67,17 +68,24 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    //lottie animation dependency
+    implementation("com.airbnb.android:lottie-compose:5.2.0")
 
-    implementation("com.google.accompanist:accompanist-systemuicontroller:<version>")
+    // Navigation Dependency
+    implementation(libs.androidx.navigation.compose)
 
+    //pager
+    implementation("com.google.accompanist:accompanist-pager:0.12.0")
 
-    //system UI Controller
-    implementation("libs.accompanist.system.systemuicontroller")
-    implementation ("com.google.accompanist:accompanist-systemuicontroller:<version>")
+    //Horizontal Pagination
+    implementation("com.google.accompanist:accompanist-pager:0.27.1")
+
+    implementation("androidx.compose.foundation:foundation:1.4.3")
+    implementation("com.google.accompanist:accompanist-pager-indicators:0.30.1")
+
+    //System UI Controller
+    implementation(libs.accompanist.systemuicontroller)
+
     //Extended Icons
-    implementation("androidx.compose.material:material-icons-extended-android:1.5.4")
-}
-
-repositories {
-    mavenCentral()
+    implementation("androidx.compose.material:material-icons-extended:1.5.4")
 }
